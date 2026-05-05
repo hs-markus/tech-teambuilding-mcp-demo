@@ -1,0 +1,7 @@
+{
+  "name": "highcharts-column",
+  "language": "javascript",
+  "description": "Basic Highcharts column chart showing quarterly revenue data",
+  "tags": ["highcharts", "column", "chart", "revenue"],
+  "code": "Highcharts.chart('container', {\n  chart: { type: 'column' },\n  title: { text: 'Quarterly Revenue' },\n  xAxis: {\n    categories: ['Q1', 'Q2', 'Q3', 'Q4']\n  },\n  yAxis: {\n    title: { text: 'Revenue (USD)' }\n  },\n  series: [{\n    name: 'Revenue',\n    data: [430000, 510000, 490000, 620000]\n  }]\n});"
+}

@@ -1,0 +1,6 @@
+[project]
+name = "mcp-workshop"
+version = "1.0.0"
+description = "Workshop: Build an MCP server with FastMCP"
+requires-python = ">=3.10"
+dependencies = ["fastmcp"]

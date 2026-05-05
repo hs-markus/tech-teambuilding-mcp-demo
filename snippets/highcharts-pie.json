@@ -1,0 +1,7 @@
+{
+  "name": "highcharts-pie",
+  "language": "javascript",
+  "description": "Highcharts pie chart with percentage data labels, showing browser market share",
+  "tags": ["highcharts", "pie", "chart", "labels", "percentage"],
+  "code": "Highcharts.chart('container', {\n  chart: { type: 'pie' },\n  title: { text: 'Browser Market Share' },\n  plotOptions: {\n    pie: {\n      dataLabels: {\n        enabled: true,\n        format: '<b>{point.name}</b>: {point.percentage:.1f}%'\n      }\n    }\n  },\n  series: [{\n    name: 'Market Share',\n    data: [\n      { name: 'Chrome',  y: 65.2 },\n      { name: 'Safari',  y: 19.1 },\n      { name: 'Firefox', y:  4.0 },\n      { name: 'Edge',    y:  3.9 },\n      { name: 'Other',   y:  7.8 }\n    ]\n  }]\n});"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "express-route",
+  "language": "javascript",
+  "description": "Express.js GET route with async/await, 404 handling, and 500 error fallback",
+  "tags": ["express", "node", "route", "async", "error-handling"],
+  "code": "app.get('/items/:id', async (req, res) => {\n  try {\n    const item = await db.findById(req.params.id);\n\n    if (!item) {\n      return res.status(404).json({ error: 'Item not found' });\n    }\n\n    res.json(item);\n  } catch (err) {\n    console.error(err);\n    res.status(500).json({ error: 'Internal server error' });\n  }\n});"
+}
