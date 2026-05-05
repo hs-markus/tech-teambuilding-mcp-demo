@@ -19,7 +19,7 @@ By the end you will have a server running locally over stdio and remotely over H
 
 ```bash
 git clone <this-repo>
-cd mcp-workshop
+cd tech-teambuilding-mcp-demo
 pip install fastmcp
 fastmcp run server.py
 ```
